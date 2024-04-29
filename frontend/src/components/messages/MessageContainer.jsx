@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import useConversation from "../../zustand/useConversation";
-import MessageInput from "./MessageInput.jsx";
+import MessageInput from "./MessageInput";
 import Messages from "./Messages";
 import { TiMessages } from "react-icons/ti";
 import { useAuthContext } from "../../context/AuthContext";
@@ -25,7 +25,7 @@ const MessageContainer = () => {
 						<span className='text-gray-900 font-bold'>{selectedConversation.fullname}</span>
 					</div>
 					<Messages />
-					<MessageInput />
+					<MessageInput/>
 				</>
 			)}
 		</div>
